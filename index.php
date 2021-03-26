@@ -4,6 +4,9 @@
          try {
             
            // $singletonDB = SingletonDB::getInstance()->connectMysql();
+	   // $singletonDB = SingletonDB::getInstance()->connectMicrosoftSqlServer();
+           // $singletonDB = SingletonDB::getInstance()->connectPostgreSql();
+		 
            $singletonDB = SingletonDB::getInstance()->connectSQLite();
           $query  = "SELECT `nameUser` FROM `testwielki`";
          // $result = $singletonDB->prepare($query);
