@@ -48,7 +48,7 @@ public function connectMysql(){
 	   
  $dns = $engine.':host='.$host.';port='.$port.';'
        . 'dbname='.$database.';';
- $connect = new PDO($dns, $user, $pass, $this->options);  // bufor 1-50MB
+ $connect = new PDO($dns, $user, $pass, $this->options); 
  
 	$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		return $connect;
@@ -64,7 +64,7 @@ public function connectMicrosoftSqlServer(){
 	   
  $dns = $engine.':server='.$host.';'
        . 'dbname='.$database.';';
- return new PDO($dns, $user, $pass, $this->options);  // bufor 1-50MB
+ return new PDO($dns, $user, $pass, $this->options); 
 
 }
 public function connectPostgreSql(){
@@ -78,6 +78,6 @@ public function connectPostgreSql(){
 	   
  $dns = $engine.':host='.$host.';port='.$port.';'
         .'dbname='.$database.';user='.$user.';password='.$pass.'';
-   return new PDO($dns, null, null, $this->options);  // bufor 1-50MB
+   return new PDO($dns, null, null, $this->options);  
   }
 }
