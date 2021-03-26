@@ -1,2 +1,2 @@
 # SingletonDBConnect
-Połączenie singleton PDO do wielu baz danych
+Połączenie singleton PHP PDO do wielu baz danych
