@@ -77,7 +77,7 @@ public function connectPostgreSql(){
              $pass     = '';
 	   
  $dns = $engine.':host='.$host.';port='.$port.';'
-        .'dbname='.$database.';user='.$user.'password='.$pass.'';
+        .'dbname='.$database.';user='.$user.';password='.$pass.'';
    return new PDO($dns, null, null, $this->options);  // bufor 1-50MB
   }
 }
